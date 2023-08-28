@@ -1,0 +1,214 @@
+.shoppingCart {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 30%;
+  margin: 0 auto;
+}
+
+.shoppingCart h2 {
+  font-family: "Comic Sans MS", cursive;
+  font-size: 28px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.itemList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: fit-content;
+}
+
+.itemNamePrice{
+  display: flex;  
+  justify-content: space-between;
+  width: 100%; 
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.itemName {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.itemPrice {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.itemActions {
+  display: flex;
+  align-items: center;
+}
+
+.itemQuantity {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.quantityButton {
+  padding: 5px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.decrementButton {
+  font: inherit;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #8a2b06;
+  border: 1px solid #8a2b06;
+  width: 2rem;
+  text-align: center;
+  border-radius: 6px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin: 0.25rem;  
+}
+.decrementButton:hover{
+  background-color: #8a2b06;
+  color: white;
+}
+.decrementButton:disabled{
+  opacity: 0.4;
+}
+
+.incrementButton {
+  font: inherit;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: darkgreen;
+  border: 1px solid darkgreen;
+  width: 2rem;
+  text-align: center;
+  border-radius: 6px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin: 0.25rem;
+}
+
+.incrementButton:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+.incrementButton:disabled{
+  opacity: 0.4;
+}
+
+.removeButton {
+  padding: 8px 16px; /* Adjust padding to make the button bigger */
+  border-radius: 20px; /* Set border-radius for rounded corners */
+  background-color: rgba(139, 0, 0, 0.6); /* Set blood red color with opacity */
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.removeButton:hover {
+  background-color: rgba(139, 0, 0, 1); /* Increase opacity on hover */
+}
+
+.totalPrice {
+  margin-top: 10px;
+  font-size: 21px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.linkButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  background-color: #8a2b06;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.link:hover{
+  opacity: .7;
+}
+
+.link::before {
+  content: "\2190";
+  margin-right: 5px;
+}
+
+
+.confirmPurchase {
+  background-color: darkgreen;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.confirmPurchase:hover {
+  opacity: .7;
+}
+
+.inputFields {
+  margin-top: 20px;
+}
+
+.inputFields label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.inputFields input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.inputFields input:focus {
+  outline: none;
+  border-color: #8a2b06;
+}
+
+.note {
+  text-align: right;
+  font-size: 14px;
+  font-style: italic;
+}

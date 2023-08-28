@@ -1,0 +1,14 @@
+.title {
+  font-family: "Comic Sans MS", cursive;
+  font-size: 46px;
+  margin-top: 0px;
+  margin-bottom: 50px;  
+  text-align: center;
+  color: lightgoldenrodyellow;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

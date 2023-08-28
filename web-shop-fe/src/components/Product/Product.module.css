@@ -1,0 +1,119 @@
+.productItem {
+  text-align: center;
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 50px;
+  position: relative;
+}
+
+.productItem h3 {  
+  color:white;
+  text-align: start;
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.productItem .price {
+  color:white;
+  text-align: start;
+  font-style: italic;
+  font-size: 20px;
+  margin: 0;  
+}
+
+.productItem .picture {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 12px;
+}
+
+.productItem .amount {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+  color: white;
+}
+
+.description {
+  display: none;
+  position: absolute;
+  bottom: -45px;
+  left: 0;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.productItem:hover .description {
+  display: block;
+}
+
+.productItem .deleteButton {
+  position: absolute;
+  border: 0.5px solid black;
+  top: 70px;
+  right: 0px;
+  font-size: 30px;  
+  width: 35px;
+  height: 35px;
+  background-color: red;
+  color: white;
+}
+
+.productItem .deleteButton:hover {
+  background-color: darkred;
+  color: black
+}
+
+.productItem .updateButton {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  background-color: green;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.productItem .updateButton:hover {
+  background-color: lightgreen;
+}
+
+.productItem:hover .updateButton {
+  display: block;
+}
+
+.buyerSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantityButton {
+  padding: 8px;
+  font-size: 16px;
+  background-color: orange;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.quantityInput {
+  width: 90px;
+  height: 33px;
+  margin: 0 10px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}

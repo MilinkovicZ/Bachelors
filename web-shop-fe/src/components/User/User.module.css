@@ -1,0 +1,44 @@
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.userTable td {
+  padding: 8px;
+  border-bottom: 1px dotted black;
+}
+
+.userTable tr:last-child td {
+  border-bottom: none;
+}
+
+.userTable .label {
+  font-weight: bold;
+  color: #555555;
+}
+
+.userTable .verifyButton {
+  margin-right: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.userTable .declineButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+}

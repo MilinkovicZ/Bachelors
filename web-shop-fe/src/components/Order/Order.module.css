@@ -1,0 +1,103 @@
+.orderIdAddresContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  font-weight: bold;
+}
+  .orderId {
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 20px;
+  }
+  
+  .deliveryAddress {
+    font-size: 18px;
+    margin: 0px;
+    margin-top: 20px;
+  }
+
+.items {
+  margin: 0px;
+  margin-bottom: 7px;
+  font-size: 20px;
+}
+
+.orderCommentPriceContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+  .comment {
+    font-style: italic;
+    font-size: 15px;  
+    margin: 0px;
+  }
+
+  .totalPrice {
+    font-size: 18px;
+    font-weight: bold;  
+    margin: 0px;
+  }
+
+.orderStatus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+  .orderStatusLabel {
+    margin: 0px;
+  }
+
+  .orderStatusState {
+    margin: 0px;
+  }
+
+.deliveryTime {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;  
+  margin-bottom: 14px;
+  font-weight: bold;
+  font-size: 18px;
+  height: 30px;
+}
+
+  .deliveryTimeLabel {
+    margin: 0px;
+  }
+
+  .deliveryTimeState {
+    margin:  0px;
+  }
+
+
+.buttonContainer {
+  display: flex;
+  justify-content: right;
+  margin-top: 15px;
+}
+
+.cancelButton {
+  background-color: #8a2b06;
+  color: white;
+  cursor: pointer;
+  border-radius: 11px;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 15px;
+  right: 10px;
+}
+
+.cancelButton:hover {
+  opacity: 0.7;
+}

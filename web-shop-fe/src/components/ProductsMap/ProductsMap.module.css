@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.orderNumber {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.address {
+  font-style: italic;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.acceptButton {
+  background-color: darkgreen;
+  color: white;
+  cursor: pointer;
+  border-radius: 11px;
+  font-size: 14px;
+  padding: 10px;
+  height: 30px; 
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.acceptButton:hover {
+  opacity: 0.7;
+}

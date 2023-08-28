@@ -1,0 +1,27 @@
+.container {
+  position: relative;
+  padding-bottom: 50px;
+  width: fit-content;
+  display: flex;
+  margin: 0 auto;
+}
+
+.cartLink {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: -80px;
+  padding: 10px 40px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 24px;
+  opacity: 1;
+  transition: opacity 0.3s;
+  text-decoration: none;
+}
+
+.cartLink:hover {
+  opacity: 0.7;
+}
