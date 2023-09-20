@@ -25,24 +25,15 @@ namespace WebShop.Services
         public async Task CreateNewProduct(CreateProductDTO productDTO, int sellerId)
         {
             User? seller = await _unitOfWork.UsersRepository.Get(sellerId);
-            if (seller == null)
-                throw new UnauthorizedException($"Unable to find user with ID: {sellerId}.");
-
-            if (string.IsNullOrWhiteSpace(productDTO.Name))
-            {
-                _logger.LogError($"[CreateNewProduct] [User: {seller.Email}] - Adding product without name.");
-                throw new BadRequestException("Product name is empty!");
-            }
-
             if (productDTO.Amount <= 0)
             {
-                _logger.LogError($"[CreateNewProduct] [User: {seller.Email}] - Invalid number of products.");
+                _logger.LogError($"[CreateNewProduct] [User: {seller?.Email}] - Invalid number of products.");
                 throw new BadRequestException("Product amount must be higher then 0!");
             }
 
             if (productDTO.Price <= 0)
             {
-                _logger.LogError($"[CreateNewProduct] [User: {seller.Email}] - Invalid price of product.");
+                _logger.LogError($"[CreateNewProduct] [User: {seller?.Email}] - Invalid price of product.");
                 throw new BadRequestException("Product price must be higher then 0!");
             }
 
